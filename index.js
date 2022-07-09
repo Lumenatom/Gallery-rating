@@ -92,12 +92,34 @@ setTimeout(() => {
 
     console.log('---------------------------------------------------------');
 
-    console.log(document.getElementsByTagName('p').text().length);
+    const elem = ["div", "h2", "img", "p", "script"];
+    amountSymbols(elem.sort((b, a) => b.length - a.length));
 }, 1000)
 
 
 
+const amountSymbols = (elem) => {
+    elem.map((item) => {
+        if (item.length == 1) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        } else if (item.length == 2) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        }
+        else if (item.length == 3) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        }
+        else if (item.length == 4) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        }
+        else if (item.length == 5) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        }
+        else if (item.length == 6) {
+            console.log(`3. Елемент "${item}" має символів: ${item.length}`);
+        }
+    })
 
+}
 
 
 
